@@ -1,7 +1,7 @@
 '''
 Author : F323RED
 Date : 2020/9/26
-Version : 0.1.0
+Version : 0.2.0
 Describe : Python homework-001
 '''
 
@@ -21,11 +21,16 @@ def G(x) :      # Define function G()
 a = 2 * math.pi
 b = -a                          # X c [-2 * PI, 2 * PI]
 n = 1000                        # Number of points
-deltaX = (a - b) / (n - 1)      # Delta of each points
 
-listX = [b + i * deltaX for i in range(n)]
+listX = lab.linspace(a, b, n)
 listY1 = [F(i) for i in listX ]
 listY2 = [G(i) for i in listX ]
+
+# Some fancy stuff
+lab.title("max(|x * sin(x)|, |x * cos(x)|) & min(|x * sin(x)|, |x * cos(x)|)")
+lab.xlabel("x")
+lab.ylabel("y")
+lab.grid()
 
 lab.plot(listX, listY1)         # Draw graph of F(x)
 lab.plot(listX, listY2)         # Draw graph of G(x)
