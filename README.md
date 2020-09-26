@@ -1,6 +1,6 @@
 # **Homework-001**
 
-  My Python homework, maybe it could be better.
+My Python homework, maybe it could be better.
   
 A simple python script that can draw graph of "y = max(abs(x * sin(x)), abs(x * cos(x)))"
 and "y = min(abs(x * sin(x)), abs(x * cos(x)))".
